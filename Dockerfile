@@ -15,6 +15,5 @@ RUN pip install -r requirements.txt
 # Running the training
 RUN python3 train.py
 
-# Creating an entrypoint and pointing to a flask app file app.py
-ENTRYPOINT [ "python" ]
-CMD [ "app.py" ]
+# Running the test file
+RUN python3 inference.py 
