@@ -44,7 +44,7 @@ def inference():
   print("Classification result:")
   print(linear_svc.score(X_test, y_test))
   print(linear_svc.predict(X_test))
-  result = str(linear_svc.predict(X_test))
+  result = str(linear_svc.score(X_test))
   return jsonify({'prediction': result})
 
 
